@@ -1,0 +1,45 @@
+.heading {
+  //background-color: orange;
+  @media only screen and (max-width: $bp-small) {
+    text-align: center;
+    //width: 80%;
+  }
+
+  &-primary {
+    font-size: 4rem;
+    font-family: $font-display-secondary;
+
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  &-text {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 2.4rem;
+  }
+}
+.section__access {
+  background-color: $blue-dark-2;
+
+  padding: 8rem 6rem;
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+}
+
+.textbox {
+  width: 50%;
+
+  &-header {
+    font-family: $font-display-secondary;
+
+    margin-bottom: 1rem;
+  }
+}
+
+.accessbox {
+  width: 50%;
+}

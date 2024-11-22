@@ -1,0 +1,43 @@
+$blue-dark-1: #070439;
+$blue-dark-2: #585989;
+
+$blue-light-1: #3065f8;
+$blue-light-2: #5984f9;
+
+$secondary-color: #3c9f8f;
+$secondary-color-2: #4ed3bd;
+
+$grey-light-1: #f6f6fe;
+$grey-light-2: #bfbfbf;
+$grey-dark-1: #706d6d;
+
+$font-display-main: "open-sans"; // FOR BODY
+$font-display-secondary: "Raleway";
+// FOR HEADING
+
+$margin-bottom-medium: 4rem;
+
+$bp-large: 75em;
+$bp-medium: 56.25em;
+$bp-small: 53.125em;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-display-main, sans-serif;
+}

@@ -1,0 +1,101 @@
+////////////////////////////////////// CTA INPUT BOX
+.cta__box {
+  position: relative;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 0 auto;
+
+    width: 80%;
+  }
+  &-mail {
+    border: 2px solid $blue-dark-2;
+    border-radius: 2px;
+    width: 50%;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    margin-right: 2rem;
+    transition: all 0.4s;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $blue-light-1;
+    }
+
+    &:focus:invalid {
+      border: 2px solid #f70000;
+    }
+
+    &:focus:invalid + label {
+      opacity: 1;
+      visibility: visible;
+      color: #f70000;
+
+      transform: translateY(2.8rem);
+    }
+  }
+
+  &-label {
+    font-size: 1.4rem;
+    color: transparent;
+
+    position: absolute;
+    top: 1.4rem;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.4s 0.1s;
+  }
+}
+
+/////////////////////////////// BUTTON CTA
+.btn {
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: $blue-light-1;
+  padding: 1rem 3.2rem;
+  width: 35%;
+
+  border: 2px solid $blue-light-1;
+  border-radius: 2px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+
+  &:link,
+  &:visited {
+    box-shadow: 0 1rem 1.6rem rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+}
+
+.btn:hover,
+.btn:active {
+  background-color: $blue-light-2;
+}
+
+.btn-access {
+  padding: 1rem 2.6rem;
+  width: 50%;
+
+  margin-top: 2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 80%;
+  }
+}
+
+///////////////////////////////////////////////////
+/// IMAGES LAYOUTS
+.section__imgbox {
+  //background-color: yellowgreen;
+  @media only screen and (max-width: $bp-small) {
+    width: 50%;
+  }
+  &-photo {
+    //height: 30rem;
+
+    width: 100%;
+  }
+}
